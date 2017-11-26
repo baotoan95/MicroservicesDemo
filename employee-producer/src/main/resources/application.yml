@@ -8,8 +8,8 @@ spring:
 
 # Registry to eureka
 eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
+#  client: (using config from config centralized service instances)
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
   instance: # Create new instance
     instanceId: ${spring.application.name}:${random.value}
