@@ -1,0 +1,15 @@
+server:
+  port: 1234
+
+# Specify application name
+spring:
+  application:
+    name: employee-producer
+
+# Registry to eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance: # Create new instance
+    instanceId: ${spring.application.name}:${random.value}

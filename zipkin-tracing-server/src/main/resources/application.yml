@@ -1,0 +1,13 @@
+server:
+  port: 5555
+
+# Specify application name
+spring:
+  application:
+    name: zipkin
+
+# Registry to eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

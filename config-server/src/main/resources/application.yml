@@ -1,0 +1,13 @@
+# Specify how config get from
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/common-config
+    
+server:
+  port: 2222
+  
